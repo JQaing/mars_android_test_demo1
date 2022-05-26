@@ -2,7 +2,40 @@ plugins {
     id 'com.android.library'
 }
 
-apply from: 'https://mars-devops.tos-cn-beijing.volces.com/mars-base/mars_publish.gradle'
+buildscript {
+    repositories {
+        mavenLocal()
+        maven {
+            url 'https://artifact.bytedance.com/repository/Volcengine/'
+        }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        } 
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        } 
+        maven {
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
+        }
+        maven {
+            url 'http://mirrors.cloud.tencent.com/nexus/repository/maven-public'
+        }
+        google()
+    }
+
+    dependencies {
+        classpath 'com.volcengine.mars:publish-plugin:0.0.1-alpha.3'
+    }
+}
+
+import com.bytedance.publish.PublishPlugin
+
+if (project.plugins.findPlugin(PublishPlugin.class)) {
+    println "[BITS] already apply bits publish plugin, won't apply again"
+} else {
+    apply plugin: PublishPlugin
+}
+
 
 android {
     compileSdkVersion 30
