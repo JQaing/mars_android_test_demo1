@@ -19,7 +19,7 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.1"
-
+        classpath 'com.volcengine.onekit:onekit-plugin:1.0.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -41,6 +41,17 @@ allprojects {
         }
         maven {
             url 'http://mirrors.cloud.tencent.com/nexus/repository/maven-public'
+        }
+        maven{
+            url 'https://storage.googleapis.com/download.flutter.io'
+        }
+        maven{
+            url 'https://packages.aliyun.com/maven/repository/2078284-snapshot-UUdeJm/'
+            name '2078284-snapshot-UUdeJmK'
+            credentials {
+                username '60362dd811598e70c0518c15'
+                password 'Ks(Bzfjk68aH'
+            }
         }
     }
 }
