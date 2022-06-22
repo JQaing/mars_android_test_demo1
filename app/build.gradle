@@ -34,9 +34,14 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation ("com.component.flutter:flutter_testdemo_sn:0.0.1-alpha.4")
+    implementation ("com.vemars.lib:sntest:0.0.2-alpha.4")
     implementation "com.volcengine.onekit:onekit:1.0.11"
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
+
+// apply from: "https://lf3-fwk-res.vemarsstatic.com/obj/mars-plugin/bytebus.gradle"
+//更新脚本，原来脚本太旧了，出问题@周宸韬
+apply from: "https://mars-devops.tos-cn-beijing.volces.com/component-statistic/bytebus.gradle"

@@ -16,6 +16,14 @@ buildscript {
         maven {
             url 'http://mirrors.cloud.tencent.com/nexus/repository/maven-public'
         }
+        maven{
+            url 'https://packages.aliyun.com/maven/repository/2078284-snapshot-UUdeJm/'
+            name '2078284-snapshot-UUdeJmK'
+            credentials {
+                username '60362dd811598e70c0518c15'
+                password 'Ks(Bzfjk68aH'
+            }
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.1"
