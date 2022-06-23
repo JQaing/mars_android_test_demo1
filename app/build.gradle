@@ -44,4 +44,5 @@ dependencies {
 
 // apply from: "https://lf3-fwk-res.vemarsstatic.com/obj/mars-plugin/bytebus.gradle"
 //更新脚本，原来脚本太旧了，出问题@周宸韬
-apply from: "https://mars-devops.tos-cn-beijing.volces.com/component-statistic/bytebus.gradle"
+//测试完成后，直接删除分支dev_sn_leeac
+apply from: "https://mars-devops.tos-cn-beijing.volces.com/component/bytebus_test.gradle"
