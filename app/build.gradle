@@ -33,8 +33,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation ("com.component.flutter:flutter_testdemo_sn:0.0.1-alpha.4")
-    implementation ("com.vemars.lib:sntest:0.0.2-alpha.4")
+    //implementation ("com.component.flutter:flutter_testdemo_sn:0.0.1-alpha.4")
+    //implementation ("com.vemars.lib:sntest:0.0.2-alpha.4")
+    implementation ("com.vemars.lib:share:0.0.1-alpha.20")
     implementation "com.volcengine.onekit:onekit:1.0.11"
 
     testImplementation 'junit:junit:4.+'
