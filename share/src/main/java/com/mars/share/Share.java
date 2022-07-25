@@ -3,7 +3,7 @@ package com.mars.share;
 public class Share {
 
     public static String tag() {
-        return "share v6";
+        return "share v10";
     }
 
 }
