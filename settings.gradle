@@ -2,3 +2,4 @@ rootProject.name = "MarsComponentDemo"
 include ':app'
 include ':lib_android'
 include ':share'
+include ':sn666'
